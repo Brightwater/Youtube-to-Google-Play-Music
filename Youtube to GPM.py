@@ -30,10 +30,10 @@ downloadPath = pathlib.Path().absolute()
 print("Converting video to mp3 file...")
 
 # start youtube-dl as subprocess
-subprocess.call('.\youtube-dl -f bestaudio --no-playlist --audio-format mp3 -x "' + videoLink + '"')
+subprocess.call("youtube-dl -f bestaudio --no-playlist --audio-format mp3 -x " + videoLink)
 
-# If not running directly in windows shell change to this
-#subprocess.call("youtube-dl -f bestaudio --no-playlist --audio-format mp3 -x " + videoLink)
+# If running directly in windows shell change to this
+# subprocess.call('.\youtube-dl -f bestaudio --no-playlist --audio-format mp3 -x "' + videoLink + '"')
 
 print("\nFile downloaded.")
 
@@ -66,7 +66,6 @@ while not done:
 		done = True
 		driver.minimize_window()
 	except:
-		sys.stdout.write(".")
 		time.sleep(2)
 
 # find the mp3 file that was downloaded
@@ -96,7 +95,7 @@ except:
 timeout = 0
 foundCount = 0
 
-while True and timeout < 3:
+while True and timeout < 6:
 	status = ""
 	try:
 		driver.find_element_by_xpath('/html/body/paper-drawer-panel/iron-selector/div[1]/div[1]/button').click()
@@ -104,7 +103,6 @@ while True and timeout < 3:
 		found = found + 1
 	except:
 		if foundCount < 2:
-			print("looking for element")
 			time.sleep(3)
 			timeout = timeout + 1
 		else:
@@ -114,9 +112,10 @@ print("File upload complete! Finishing up.")
 
 # remove mp3 file from directory
 # if you want to keep the file remove this line
-os.remove(latestFile)
 
-time.sleep(7)
+driver.minimize_window()
+time.sleep(10)
 print("Goodbye.")
 driver.quit()
+os.remove(latestFile)
 time.sleep(1)
