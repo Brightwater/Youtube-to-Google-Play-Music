@@ -17,7 +17,7 @@ For the server:
   - For the tool to always work, the server must be running in the background on your computer. To accomplish this I reccommend using the     pyinstaller tool https://www.pyinstaller.org/.
   - Once pyinstaller is installed in the python console run the command $ pyinstaller --noconsole --onefile "Youtube to GPM Server.py"
     This will allow the server to run in the background without having the console open at all times.
-  - To have the server run on startup you can place it in the startup folder of windows (C:\ProgramData\Microsoft\Windows\Start         Menu\Programs\Startup).
+  - To have the server run on startup you can place a shortcut to it in the startup folder of windows (C:\ProgramData\Microsoft\Windows\Start         Menu\Programs\Startup).
   
 For the engine (Youtube to GPM.py):
   - This file requires the most configuration and has some helpful notes in the python file
