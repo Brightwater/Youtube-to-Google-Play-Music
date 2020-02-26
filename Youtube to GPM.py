@@ -1,6 +1,6 @@
 # Made by Jeremiah Spears
 # Youtube to GPM
-# v1.0
+# v1.1
 #
 # Dependencies:
 #	Chrome Developer extension (Youtube to GPM)
