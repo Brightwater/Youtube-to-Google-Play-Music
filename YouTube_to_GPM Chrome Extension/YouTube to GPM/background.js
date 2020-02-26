@@ -1,4 +1,4 @@
-// Passes URL to http://192.168.1.2:8000/ in an HTTP request
+// Passes URL to http:/localhost:8000/ in an HTTP request
 function sendUrl() {
     // Get the currently selected tab
 	chrome.tabs.query({'active': true, 'lastFocusedWindow': true}, function (tabs) {
@@ -9,7 +9,7 @@ function sendUrl() {
 		if (activeUrl.toLowerCase().includes("youtube") || activeUrl.toLowerCase().includes("youtu.be") ) { // site is youtube:
 			// Creating HTTP request
 		const HTTP = new XMLHttpRequest();			// HTTP request
-		const URL  = "http://192.168.1.2:8000/";	// HTTP handler's URL
+		const URL  = "http://localhost:8000/";	// HTTP handler's URL
 		
 		HTTP.open("POST", URL, true);	
 		HTTP.send(activeUrl);	// sending the selected tab's URL
