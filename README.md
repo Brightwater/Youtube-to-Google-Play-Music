@@ -1,6 +1,6 @@
 # Youtube-to-Google-Play-Music
 
-~[Icon](https://imgur.com/a/ZA67IDf)
+![Image description](https://imgur.com/a/ZA67IDf)
 
 This was a personal project and is not meant to download any Youtube videos or songs that you do not own. Use at your own risk!
 
