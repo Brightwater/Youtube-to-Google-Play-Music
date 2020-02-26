@@ -1,0 +1,19 @@
+{
+    "name": "YouTube to GooglePlay Music",
+    "version": "1.0",
+    "description": "Converts YouTube music to GooglePlay music",
+	"browser_action": {
+		"default_icon": "icon.png"
+	},
+	"permissions": [
+		"tabs",
+		"activeTab",
+		"contextMenus",
+		"clipboardWrite"
+	],
+	"background": {
+		"persistent": false,
+		"scripts": ["background.js"]
+	},
+	"manifest_version": 2
+}
