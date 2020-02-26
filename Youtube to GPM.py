@@ -16,7 +16,6 @@ import os
 import sys
 import youtube_dl
 import subprocess
-from threading import Thread
 
 # read file that holds link from chrome extension
 file = open("link.txt", "r")
