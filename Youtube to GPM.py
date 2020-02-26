@@ -30,10 +30,10 @@ downloadPath = pathlib.Path().absolute()
 print("Converting video to mp3 file...")
 
 # start youtube-dl as subprocess
-subprocess.call("youtube-dl -f bestaudio --no-playlist --audio-format mp3 -x " + videoLink)
+subprocess.call('.\youtube-dl -f bestaudio --no-playlist --audio-format mp3 -x "' + videoLink + '"')
 
-# If running directly in windows shell change to this
-# subprocess.call('.\youtube-dl -f bestaudio --no-playlist --audio-format mp3 -x "' + videoLink + '"')
+# If not running directly in windows shell change to this
+#subprocess.call("youtube-dl -f bestaudio --no-playlist --audio-format mp3 -x " + videoLink)
 
 print("\nFile downloaded.")
 
