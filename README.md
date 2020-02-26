@@ -6,7 +6,7 @@ This was a personal project and is not meant to download any Youtube videos or s
 
 This tool enables you to upload a video (audio only) from youtube to your google play library. This lets you upload your own songs to listen to that you have available on Youtube but not google play. This project was made to be used with Windows but can be adapted on your own.
 
-To upload a song you simple click the upload button from the Chrome extension, and the program will do the rest!
+To upload a song you simply click the upload button from the Chrome extension, and the program will do the rest!
 
 This project requires a little bit of configuration and some other dependencies not included in the project! Use at your own risk. It is also designed to be used with the pyinstaller package if you plan on using all the components together seemlessly.
 
