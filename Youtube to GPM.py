@@ -91,19 +91,17 @@ try:
 except:
 	print()
 
-timeout = 0
-foundCount = 0
+found = False
 
-while True and timeout < 6:
+while True:
 	status = ""
 	try:
 		driver.find_element_by_xpath('/html/body/paper-drawer-panel/iron-selector/div[1]/div[1]/button').click()
 		status = driver.find_element_by_xpath('/html/body/paper-drawer-panel/iron-selector/div[1]/div[1]/button/paper-tooltip/div').text
-		found = found + 1
+		found = True
 	except:
-		if foundCount < 2:
+		if found is not True:
 			time.sleep(3)
-			timeout = timeout + 1
 		else:
 			break
 
