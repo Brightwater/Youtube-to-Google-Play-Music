@@ -28,7 +28,7 @@ This project requires a little bit of configuration and some other dependencies 
   - You will also need to download the youtube-dl.exe for windows. https://ytdl-org.github.io/youtube-dl/download.html along with ffmpeg. https://www.ffmpeg.org/
   - Once downloaded make sure they are either in your windows path or in the same directory as the main python files.
   
-  - Once everything is configured double check the .exes are together along with the config file, ffmpeg, and youtube-dl in the same directory. Then it should be fully configured and ready to use!
+  **- Once everything is configured double check the .exes are together along with the config file, ffmpeg, and youtube-dl in the same directory. Then it should be fully configured and ready to use!**
 
   -  If you wish to create your own executable or just run the program through python:
   - You will probably want to use pyinstaller for the main file. To do this put this command in the python console $ pyinstaller --onefile "Youtube to GPM.py"
