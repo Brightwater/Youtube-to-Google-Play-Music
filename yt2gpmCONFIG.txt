@@ -1,0 +1,3 @@
+firstRun:False
+Youtube-DL Arguments:-f bestaudio --no-playlist --audio-format mp3 -x
+removeDownloadedFile (saves storage space):True
