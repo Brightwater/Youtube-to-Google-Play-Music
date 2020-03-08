@@ -14,18 +14,21 @@ This project requires a little bit of configuration and some other dependencies 
   Simply download the folder and enable developer mode in chrome. Then just upload the extension.
   
 # For the server:
+  - Executable files. If you trust me and wish to just made the premade executable file then just run the file Youtube to GPM server --nosplash.exe. I also recommend placing this file in your startup directory as explained below.
+   - To have the server run on startup you can place a shortcut to it in the startup folder of windows (C:\ProgramData\Microsoft\Windows\Start         Menu\Programs\Startup).
+
+  - If you wish to create your own executable or just run the program through python follow this and the source file.
   - For the tool to always work, the server must be running in the background on your computer. To accomplish this I reccommend using the     pyinstaller tool https://www.pyinstaller.org/.
   - Once pyinstaller is installed in the python console run the command $ pyinstaller --noconsole --onefile "Youtube to GPM Server.py"
     This will allow the server to run in the background without having the console open at all times.
   - To have the server run on startup you can place a shortcut to it in the startup folder of windows (C:\ProgramData\Microsoft\Windows\Start         Menu\Programs\Startup).
   
 # For the engine (Youtube to GPM.py):
-  - This file requires the most configuration and has some helpful notes in the python file
-  - For the program to actually upload the file you will need to download the Google Chrome webdriver to be used with Selenium. https://chromedriver.chromium.org/downloads Once downloaded make sure it is either in your windows path or in the same directory as the main python files.
-  - You will then need to run the program once so you can configure a new Chrome Profile for the webdriver to use (If you configure it to   use your existing chrome profile it will not work while you have your normal Google Chrome open.
-  - Next you will need to find the chromedriver user profile located in C:/users/your name/AppData/Local/Google/Chrome/User Data/(profile) It should be in a separate folder than your normal Chrome. Place this path in the python file where it says to.
-  - While the webdriver is running and your profile is logged in to chrome you will need to visit the google play site and login with     your account. You will then also need to download the Google Play Music extension for chrome to be able to upload songs.
+  - Executable files. If you trust me and wish to just made the premade executable file then just run the file Youtube to GPM.exe.
   - You will also need to download the youtube-dl.exe for windows. https://ytdl-org.github.io/youtube-dl/download.html along with ffmpeg. https://www.ffmpeg.org/
   - Once downloaded make sure they are either in your windows path or in the same directory as the main python files.
-  - You will probably also want to use pyinstaller for the main file. To do this put this command in the python console $ pyinstaller --onefile "Youtube to GPM.py"
-  - Once everything is configured double check the pyinstaller .exes are together along with the chromedriver, ffmpeg, and youtube-dl in the same directory. Then it should be fully configured and ready to use!
+  
+  - Once everything is configured double check the .exes are together along with the config file, ffmpeg, and youtube-dl in the same directory. Then it should be fully configured and ready to use!
+
+  -  If you wish to create your own executable or just run the program through python:
+  - You will probably want to use pyinstaller for the main file. To do this put this command in the python console $ pyinstaller --onefile "Youtube to GPM.py"
