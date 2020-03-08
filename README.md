@@ -10,16 +10,16 @@ To upload a song you simply click the upload button from the Chrome extension, a
 
 This project requires a little bit of configuration and some other dependencies not included in the project! Use at your own risk. It is also designed to be used with the pyinstaller package if you plan on using all the components together seemlessly.
 
-For the Chrome Extension:
+# For the Chrome Extension:
   Simply download the folder and enable developer mode in chrome. Then just upload the extension.
   
-For the server:
+# For the server:
   - For the tool to always work, the server must be running in the background on your computer. To accomplish this I reccommend using the     pyinstaller tool https://www.pyinstaller.org/.
   - Once pyinstaller is installed in the python console run the command $ pyinstaller --noconsole --onefile "Youtube to GPM Server.py"
     This will allow the server to run in the background without having the console open at all times.
   - To have the server run on startup you can place a shortcut to it in the startup folder of windows (C:\ProgramData\Microsoft\Windows\Start         Menu\Programs\Startup).
   
-For the engine (Youtube to GPM.py):
+# For the engine (Youtube to GPM.py):
   - This file requires the most configuration and has some helpful notes in the python file
   - For the program to actually upload the file you will need to download the Google Chrome webdriver to be used with Selenium. https://chromedriver.chromium.org/downloads Once downloaded make sure it is either in your windows path or in the same directory as the main python files.
   - You will then need to run the program once so you can configure a new Chrome Profile for the webdriver to use (If you configure it to   use your existing chrome profile it will not work while you have your normal Google Chrome open.
